@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Página de ejemplo — HTML/CSS/JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Página de ejemplo</h1>
+      <p>Una página sencilla usando HTML, CSS y JavaScript.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Saludo interactivo</h2>
+        <label for="name">Tu nombre:</label>
+        <input id="name" type="text" placeholder="Escribe tu nombre" />
+        <button id="greetBtn">Saludar</button>
+        <p id="greeting" aria-live="polite"></p>
+      </section>
+
+      <section class="card">
+        <h2>Modo oscuro</h2>
+        <p>Prueba a activar/desactivar el modo oscuro.</p>
+        <button id="toggleDark">Alternar modo oscuro</button>
+      </section>
+
+      <section class="card">
+        <h2>Reloj</h2>
+        <p>Hora actual: <span id="time">--:--:--</span></p>
+      </section>
+      <section class="card">
+        <h2>Imagen subida</h2>
+        <p>Esta es la imagen que subiste (guardada en <code>images/</code>):</p>
+        <img src="images/images.jpg" alt="Imagen subida" style="max-width:100%;height:auto;" />
+      </section>
+    </main>
+
+    <footer>
+      <small>Creado como ejemplo didáctico — HTML/CSS/JS</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
